@@ -1,26 +1,28 @@
 {
   "name": "n8n-nodes-bloomyearth",
   "version": "0.1.0",
-  "description": "Official n8n node for Bloomy Earth – tree planting, carbon offsetting, and credit checks via API.",
+  "description": "Official n8n node for Bloomy Earth – tree planting, carbon offsetting, and credit balance via API.",
   "license": "MIT",
-  "author": "Bloomy Earth",
+  "author": "Bloomy Earth <contact@bloomy.earth>",
   "keywords": [
-    "n8n-community-node",
+    "n8n-community-node-package",
     "n8n",
     "bloomy earth",
     "tree planting",
     "carbon offset",
-    "climate"
+    "climate",
+    "api"
   ],
   "main": "dist/nodes/BloomyEarth/BloomyEarth.node.js",
   "scripts": {
-    "build": "tsc"
+    "build": "tsc",
+    "prepare": "npm run build"
   },
   "dependencies": {},
   "devDependencies": {
-    "n8n-workflow": "^1.0.0",
+    "typescript": "^5.0.0",
     "n8n-core": "^1.0.0",
-    "typescript": "^5.0.0"
+    "n8n-workflow": "^1.0.0"
   },
   "n8n": {
     "credentials": [
