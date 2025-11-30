@@ -1,6 +1,6 @@
 {
   "name": "n8n-nodes-bloomyearth",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Official n8n node for Bloomy Earth – tree planting, carbon offsetting, and credit balance via API.",
   "license": "MIT",
   "author": "Bloomy Earth <contact@bloomy.earth>",
@@ -15,7 +15,7 @@
   ],
   "main": "dist/nodes/BloomyEarth/BloomyEarth.node.js",
   "scripts": {
-    "build": "tsc",
+    "build": "tsc && mkdir -p dist/nodes/BloomyEarth && cp nodes/BloomyEarth/bloomyEarth.svg dist/nodes/BloomyEarth/bloomyEarth.svg",
     "prepare": "npm run build"
   },
   "dependencies": {},
